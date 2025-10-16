@@ -75,16 +75,10 @@ export default function Header({ handleClick }) {
 					ease: "easeInOut",
 					duration: 1,
 					delay: 2.5,
-				}}>
-				<p className="w-2/3 lg:w-1/3 text-md md:text-xl font-medium mb-6 text-white text-center lg:text-left">
-					<span className="block font-bold text-xl">
-						Disclaimer :
-					</span>
-					this text is based on random data, not an actual person
-				</p>
+				}}>			
 				<button
 					onClick={handleClick}
-					className="lg:w-1/3 w-2/3 bg-black text-white border-white border-1 rounded-xl py-3 text-sm md:text-xl cursor-pointer hover:opacity-80 transition-opacity active:scale-95">
+					className="bg-black text-white border-white border-2 rounded-xl p-3 text-sm md:text-xl cursor-pointer hover:opacity-80 transition-opacity active:scale-95">
 					Generate Data
 				</button>
 			</motion.div>
