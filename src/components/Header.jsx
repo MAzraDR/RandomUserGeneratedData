@@ -8,7 +8,7 @@ export default function Header({ handleClick }) {
 		);
 
 	return (
-		<header className="z-10 relative flex flex-col items-center mt-10 lg:mt-50 tracking-[0.2em] md:tracking-[0.3em] px-4">
+		<header className="z-10 relative flex flex-col items-center mt-5 lg:mt-5 tracking-[0.2em] md:tracking-[0.3em] px-4">
 			<motion.h1
 				className="text-3xl md:text-5xl lg:text-7xl font-bold text-center"
 				variants={{
@@ -68,23 +68,23 @@ export default function Header({ handleClick }) {
 			</motion.div>
 
 			<motion.div
-				className="flex flex-col md:flex-row items-center md:items-start justify-evenly md:w-[80vw] lg:w-[70vw] my-10 bg-black/50 lg:bg-transparent p-4  rounded-xl"
+				className="flex flex-col lg:flex-row items-center lg:items-start justify-evenly md:w-[80vw] lg:w-[70vw] my-10 lg:bg-transparent p-4 rounded-xl"
 				initial={{ opacity: 0, scale: 0 }}
 				animate={{ opacity: 1, scale: 1 }}
 				transition={{
 					ease: "easeInOut",
-					duration: 0.5,
+					duration: 1,
 					delay: 2.5,
 				}}>
-				<p className="w-2/3 lg:w-1/3 text-md md:text-xl font-medium mb-6 text-white lg:text-black text-center md:text-left">
-					<span className="block font-bold text-xl ">
+				<p className="w-2/3 lg:w-1/3 text-md md:text-xl font-medium mb-6 text-white text-center lg:text-left">
+					<span className="block font-bold text-xl">
 						Disclaimer :
 					</span>
 					this text is based on random data, not an actual person
 				</p>
 				<button
 					onClick={handleClick}
-					className="md:w-1/3 w-2/3 bg-black text-white border-white border-1 rounded-xl py-3 text-sm md:text-xl cursor-pointer hover:opacity-80 transition-opacity active:scale-95">
+					className="lg:w-1/3 w-2/3 bg-black text-white border-white border-1 rounded-xl py-3 text-sm md:text-xl cursor-pointer hover:opacity-80 transition-opacity active:scale-95">
 					Generate Data
 				</button>
 			</motion.div>
